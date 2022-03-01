@@ -49,6 +49,7 @@ window.Livewire.directive('sortable-group', (el, directive, component) => {
         handle: el.querySelector('[wire\\:sortable-group\\.handle]') ? '[wire\\:sortable-group\\.handle]' : null,
         sort: true,
         dataIdAttr: 'wire:sortable-group.item',
+        animation: 200, 
         group: {
             name: el.closest('[wire\\:sortable-group]').getAttribute('wire:sortable-group'),
             pull: true,
