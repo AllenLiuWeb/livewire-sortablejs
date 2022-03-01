@@ -16,6 +16,7 @@ window.Livewire.directive('sortable', (el, directive, component) => {
         draggable: '[wire\\:sortable\\.item]',
         handle: el.querySelector('[wire\\:sortable\\.handle]') ? '[wire\\:sortable\\.handle]' : null,
         sort: true,
+        animation: 200, 
         dataIdAttr: 'wire:sortable.item',
         group: {
             name: el.getAttribute('wire:sortable'),
